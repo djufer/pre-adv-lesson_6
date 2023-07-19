@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- зареєструватись -->
+            <div class="container-sign-up container">
+                <h1>Please sign up</h1>
+
+                <div class="input-block">
+                    <label for="firstName" class="labels">First name</label>
+                    <input type="text" name="firstName" id="firstName" class="labeled"/>
+                </div>
+
+                <div class="input-block">
+                    <label for="lastName" class="labels">Last name</label>
+                    <input type="text" name="lastName" id="lastName"  class="labeled"/>
+                </div>
+
+                <div class="input-block">
+                    <label for="eMail-s-up" class="labels">Email address</label>
+                    <input type="email" name="eMail" id="eMail-s-up"  class="labeled"/>
+                    <div class="alredy-exist">
+                        This email alredy exists
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <label for="password-s-up" class="labels">Password</label>
+                    <input type="password" name="password" id="password-s-up"  class="labeled"/>
+                </div>
+
+                <input
+                    type="button"
+                    name="sign-up"
+                    id="sign-up"
+                    value="Sign Up"
+                    class="button"
+                />
+                <span class="link to-sign-in">Sign in now</span>
+            </div>
+
+            <!-- увійти -->
+            <div class="container-sign-in container hide">
+                <h1>Please sign in</h1>
+
+                <div class="input-block">
+                    <label for="eMail-s-in" class="labels">Email address</label>
+                    <input type="email" name="eMail" id="eMail-s-in"  class="labeled"/>
+                </div>
+
+                <div class="input-block">
+                    <label for="password-s-in" class="labels">Password</label>
+                    <input type="password" name="password" id="password-s-in"  class="labeled" />
+                </div>
+
+                <input
+                    type="button"
+                    name="sign-in"
+                    id="sign-in"
+                    value="Sign in"
+                    class="button green"
+                />
+                <span class="link to-sign-up">Sign up now</span>
+            </div>
+
+            <!-- -Profile block -->
+             <div class="container contaner-profile hide">
+                <div id="avatar"></div>
+                <div class="full-name-block">
+                    <h1 id="fullName"></h1>
+                </div>
+                <div class="profile-email-block gray"></div>
+                <div class="position-block gray">Frontend developer</div>
+
+
+                <input
+                    type="button"
+                    name="sign-in"
+                    id="profile-sign-in"
+                    value="Sign Up"
+                    class="button green"
+                />
+            </div>
+
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
